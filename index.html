@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Maker 1.0</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-container pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class=" d-flex flex-column justify-content-end">
+                        <p class="greeting ps-1">Hello</p>
+                        <h1 class="fullname pb-3 ps-1">Everyone</h1>
+                        <div class="bookmark-maker-container">
+                            <h1 class="bookmark-maker-heading text-center mb-4">Bookmark Your Favorite Sites</h1>
+                            <form id="bookmarkForm" class="bookmark-maker-form-container p-3 mb-4">
+                                <div class="d-flex flex-column mb-3">
+                                    <label for="siteNameInput" class="site-name form-label">SITE NAME</label>
+                                    <input type="text" id="siteNameInput" class="form-control">
+                                    <p id="siteNameErrMsg"></p>
+                                </div>
+                                <div class=" d-flex flex-column mb-3">
+                                    <label for="siteUrlInput" class="site-url form-label">SITE URL</label>
+                                    <input type="text" id="siteUrlInput" class="form-control">
+                                    <p id="siteUrlErrMsg"></p>
+                                </div>
+                                <div class=" d-flex justify-content-end">
+                                    <button id="submitBtn" class="submit-btn">Submit</button>
+                                </div>
+                            </form>
+
+                            <ul id="bookmarksList">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
